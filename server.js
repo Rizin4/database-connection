@@ -1,10 +1,12 @@
 const express = require("express")
+const dotenv = require("dotenv")
 
 const router = require("./router/Testrouter")
 const connectDB = require("./database/db")
 
 connectDB()
 
+dotenv.config()
 
 const app = express()
 
